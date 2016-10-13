@@ -10,5 +10,6 @@ post '/names' do
      names = params[:name]
      random_names_array = randomizer(names)
      name_pairs = fix(random_names_array)
-     erb :get_names, :locals => {:name_pairs => name_pairs, :message => "Would you like to make a new pairing?", :message1 => "And your random pairs are"}
-end
+     #{}"what are my pairs #{name_pairs}"
+      erb :get_names, :locals => {:name_pairs => name_pairs, :message => "Enter a new number of names to pair.", :message1 => "And your random pairs are"}
+  end
