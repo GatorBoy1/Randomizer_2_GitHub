@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head> 
-<h3>How many people are in class today ?</h3>
+<h3><%=how_many%></h3>
   <h5><%=message1%></h5>
   	<%=name_pairs%>
   <h5><%=message%></h5>	
 <form method = "post" action = "/names">
- <input type="number" type="range" min="2"id="fnames" oninput="makeBoxes()"/  required>
+ <input type="number" type="range" min="2"id="fnames" autofocus= "autofocus" oninput="makeBoxes()"/  required>
   <div id="boxes"></div>
 <br>
 <input type = "submit">
