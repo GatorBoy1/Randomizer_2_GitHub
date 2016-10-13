@@ -6,7 +6,7 @@
   	<%=name_pairs%>
   <h5><%=message%></h5>	
 <form method = "post" action = "/names">
- <input type="number" id="fnames" oninput="makeBoxes()"/  required>
+ <input type="number" type="range" min="2"id="fnames" oninput="makeBoxes()"/  required>
   <div id="boxes"></div>
 <br>
 <input type = "submit">
